@@ -1,0 +1,156 @@
+
+<!-- Links do bootstrap -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="../static/css/style.css">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <section class="background-radial-gradient overflow-hidden" id="#login">
+        
+      
+        <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+          <div class="row gx-lg-5 align-items-center mb-5">
+            <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+              <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                Trokupom <br />
+                <span style="color: hsl(218, 81%, 75%)">o seu site de trocas</span>
+              </h1>
+              <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+                um
+    aplicativo de trocas de produtos usados que é estimulado por ganhos de cupons de vantagens, procure algo dentro do seu guarda roupa que queira trocar por alguma outra coisa faça o seu cadastro e venha de trokupom
+              </p>
+            </div>
+      
+            <div  class="col-lg-6 mb-5 mb-lg-0 position-relative">
+              <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+              <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+      
+              <div class="card bg-glass">
+                <div class="card-body px-4 py-5 px-md-5">
+                  <form action="/auth/cadastro" method="POST">
+                  
+                    <h4 style="text-align: center; margin-bottom: 5% ;">Preencha as informações abaixo para a realização do cadastro</h4>
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1" class="form-control" name="name"/>
+                          <label class="form-label" for="form3Example1">Nome Completo</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example2" class="form-control" name="username"/>
+                          <label class="form-label" for="form3Example2">Username</label>
+                        </div>
+                      </div>
+                    </div>
+      
+                  
+                    <div class="form-outline mb-4">
+                      <input type="email" id="form3Example3" class="form-control" name="email"/>
+                      <label class="form-label" for="form3Example3">Email</label>
+                    </div>
+      
+                    
+                    <div class="form-outline mb-4">
+                      <input type="password" id="form3Example4" class="form-control" name="password"/>
+                      <label class="form-label" for="form3Example4">Senha</label>
+                    </div>
+      
+   
+                
+                    <button type="submit" style = "background-color: #29539b;
+                    background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);"class="btn btn-primary btn-block mb-2">
+                      Fazer o cadastro
+  <!---Colocar o botão para redirecionar para a página de login após fazer o cadastro-->
+
+                    </button>
+      
+                
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="sobre" style="margin-top: 5% ;">
+        <div class="row">
+             <div class="col-md-6 mb-4 fadeInUp"  >
+                    <img  style="height: 600px; width: 600px; margin-left: 18%;" src="{{ url_for('static', filename='images/fone.png') }}" alt="">
+              </div>
+        <div class="col-md-6 mb-4 fadeInUp">
+                     <h4 class="my-5 display-5 fw-bold ls-tight" style="text-align: center; font-weight: bold; color: #000; margin-right: 10px">Os melhores produtos prontos para serem trocados</h4>
+                     <p style="text-align: center; font-weight: 300; color: #000;font-size: 22px;margin-right: 10px">Com o passar do tempo, acumulamos objetos que não usamos mais, mas que, ao mesmo
+                      tempo, não achamos um destino justo para ele. Os motivos são inúmeros: ou por não
+                      sabermos para onde doar, principalmente os maiores que necessitam de transporte
+                      profissional, por não conseguirmos vender, ou por termos algum apego sentimental
+                      envolvido. Há também pessoas preocupadas com o destino deles, principalmente os
+                      eletrônicos, e como descartá-los de forma ecologicamente correta.</p>
+
+        <div style="display: grid; margin-top: 3%; ">
+              <a href="#login" class="acesso">Acessar ofertas e produtos disponíveis para troca <i style="margin-left:3px ;" class="fas fa-arrow-right"></i></a>
+        </div>
+            
+
+        </div>
+      
+      
+
+         </div>
+     </section>
+ 
+    
+    
+
+</body>
+</html>
+
+
+
+  <!-- JS do MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+
+<script type="text/javascript" src="../static/js/app.js"></script>
+<script type="text/javascript">
+  if ('serviceWorker' in navigator) {
+   window.addEventListener('load', function() {
+    navigator.serviceWorker.register("../sw.js").then(function(registration) {
+     // Registration was successful
+     console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+     // registration failed :(
+     console.log('ServiceWorker registration failed: ', err);
+    });
+   });
+  }
+ </script>

@@ -1,0 +1,9 @@
+version: '3.10'
+
+services:
+  trokupom:
+    build: 
+      context: ./
+    ports:
+      - 5000:5000
+      

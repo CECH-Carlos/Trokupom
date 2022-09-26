@@ -1,0 +1,536 @@
+.background-radial-gradient {
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%,
+        hsl(218, 41%, 35%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        hsl(218, 41%, 45%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%);
+  }
+
+  #radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  #radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  .bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+  }
+  .acesso{
+      border-radius: 30px; padding: 8px 25px ; border: 2px solid #29539b;margin: auto; border-color: #29539b;; background-color: #fff;color: #29539b;
+    }
+    .acesso:hover{
+      background-color: #29539b;
+background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+color: #fff;
+    }
+
+    .menu {
+      background-color: 
+      hsl(219, 38%, 28%) ;
+
+  }
+
+  #navmenu{
+    background-color: 
+        hsl(219, 38%, 28%) ;
+  
+  }
+  
+  .nav-link {
+      color: #5d6066;
+  }
+  
+  .nav-link:hover{
+      color: #FFF
+  }
+   
+  .banner{
+    margin: 0;
+  }
+  .banner img {
+      width: 100%;
+      height: 300px;
+     
+  }
+
+  .nav-item{
+    color: #fff;
+  }
+  
+  .active {
+      color: #1e3b70 
+  }
+  #imglogo{
+     width: 100px;
+     height: 80px;
+     margin-right: 20%;
+  }
+  #carrinho{
+    width:40px ;
+    height: 40px;
+    margin-left: 30%;
+  
+  }
+  .addPro{
+    width:40px ;
+    height: 40px;
+  }
+  #conteudoPrincipal{
+    margin: auto;
+    width: 90%;
+  }
+  .carousel-control-next-icon::after{
+    display: none;
+  }
+  .carousel-control-prev-icon::after{
+    display: none;
+  }
+  .card{
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .card-deck{
+    margin-top: 2%;
+  } 
+ #status{
+    margin-top: 10%; 
+    margin-left: 23%
+  }
+  .tituloOferta{
+   font-family: 'Source Sans Pro', sans-serif;
+  }  
+  .imgperfil{
+    width: 40px;
+    height: 40px;
+    float: left;
+  }
+  .imgProduto{
+    border-radius: 3%;
+    width:  100%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+
+  .cardProduto{
+   width: 55%;
+   height: 60%;
+   margin: auto;
+   border-radius: 10px;
+   margin-top: 3%;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  }
+  .btnCurtir{
+    width: 70px;
+    height: 70px;
+  }
+  .btnTrocar{
+    width: 70px;
+    height: 70px;
+  }
+  .imgProdutoHome{
+    width: 280px;
+    height: auto;
+    border-radius: 3%;
+    margin-bottom: 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  }
+  .imgProdutoHome2{
+    width: 280px;
+    height: auto;
+    margin-bottom: 10%;
+    border-radius: 3%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .imgProdutoHome3{
+    width: 280px;
+    height: auto;
+    margin-bottom: 10%;
+    border-radius: 3%;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  @media screen and (max-width:1366px) {
+    .nome{
+      padding-left: 15px;
+    }
+     }
+
+.col-md-3{
+text-align: center;
+height: auto;
+ }
+ .CadastroProduto{
+  width: 45%;
+  margin: auto;
+  margin-top: 5%;
+  height:auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ .tituloProduto{
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%);
+      width: 50%;
+      margin: auto;
+      padding-top: 10px ;
+      text-align: center;
+      height: 20%;
+      border-radius: 5px;
+      color: #fff;
+      top: 50%;
+
+ }
+ .btnPublicar{
+  
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      rgb(53, 79, 126) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%);
+      color: #fff;
+      border-radius: 5px;
+      width: 20%;
+      height: 50px;
+      border: none;
+ }
+#output{
+
+ width: 60%;
+ height: 400px;
+ }
+ .selecionarImagem{
+  display: none;
+ }
+ .btnImg{
+  cursor: pointer;
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      rgb(53, 79, 126) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%);
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 30px;
+ }
+ #corFundo{
+background-color:       hsl(219, 38%, 28%) ;
+;
+      
+ }
+
+ .card {
+  background: #fff;
+  transition: .5s;
+  border: 0;
+  margin-bottom: 30px;
+  border-radius: .55rem;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+.chat-app .lista-amigos {
+  width: 280px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  z-index: 7
+}
+
+.chat-app .chat {
+  margin-left: 280px;
+  border-left: 1px solid #eaeaea
+}
+
+.lista-amigos {
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s
+}
+
+.lista-amigos .chat-list li {
+  padding: 10px 15px;
+  list-style: none;
+  border-radius: 3px
+}
+
+.lista-amigos .chat-list li:hover {
+  background: #efefef;
+  cursor: pointer
+}
+
+.lista-amigos .chat-list li.active {
+  background: #efefef
+}
+
+.lista-amigos .chat-list li .name {
+  font-size: 15px
+}
+
+.lista-amigos .chat-list img {
+  width: 45px;
+  border-radius: 50%
+}
+
+.lista-amigos img {
+  float: left;
+  border-radius: 50%
+}
+
+.lista-amigos .about {
+  float: left;
+  padding-left: 8px
+}
+
+.lista-amigos .status {
+  color: #999;
+  font-size: 13px
+}
+
+.chat .chat-header {
+  padding: 15px 20px;
+  border-bottom: 2px solid #f4f7f6
+}
+
+.chat .chat-header img {
+  float: left;
+  border-radius: 40px;
+  width: 40px
+}
+
+.chat .chat-header .chat-sobre {
+  float: left;
+  padding-left: 10px
+}
+
+.chat .campo-chat {
+  padding: 20px;
+  border-bottom: 2px solid #fff
+}
+
+.chat .campo-chat ul {
+  padding: 0
+}
+
+.chat .campo-chat ul li {
+  list-style: none;
+  margin-bottom: 30px
+}
+
+.chat .campo-chat ul li:last-child {
+  margin-bottom: 0px
+}
+
+.chat .campo-chat .mensagem-box {
+  margin-bottom: 15px
+}
+
+.chat .campo-chat .mensagem-box img {
+  border-radius: 40px;
+  width: 40px
+}
+
+.chat .campo-chat .mensagem-box-tempo {
+  color: #434651;
+  padding-left: 6px
+}
+
+.chat .campo-chat .mensagem {
+  color: #444;
+  padding: 18px 20px;
+  line-height: 26px;
+  font-size: 16px;
+  border-radius: 7px;
+  display: inline-block;
+  position: relative
+}
+
+.chat .campo-chat .mensagem:after {
+  bottom: 100%;
+  left: 7%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #fff;
+  border-width: 10px;
+  margin-left: -10px
+}
+
+.chat .campo-chat .outro-mensagem {
+  background: #efefef
+}
+
+.chat .campo-chat .outro-mensagem:after {
+  bottom: 100%;
+  left: 30px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #efefef;
+  border-width: 10px;
+  margin-left: -10px
+}
+
+.chat .campo-chat .minha-mensagem {
+  background: #e8f1f3;
+  text-align: right
+}
+
+.chat .campo-chat .minha-mensagem:after {
+  border-bottom-color: #e8f1f3;
+  left: 93%
+}
+
+.chat .chat-mensagem {
+  padding: 20px
+}
+
+.online,
+.offline,
+.me {
+  margin-right: 2px;
+  font-size: 8px;
+  vertical-align: middle
+}
+
+.online {
+  color: #86c541
+}
+
+.offline {
+  color: #e47297
+}
+
+.me {
+  color: #1d8ecd
+}
+
+.float-right {
+  float: right
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0
+}
+
+@media only screen and (max-width: 767px) {
+  .chat-app .lista-amigos {
+      height: 465px;
+      width: 100%;
+      overflow-x: auto;
+      background: #fff;
+      left: -400px;
+      display: none
+  }
+  .chat-app .lista-amigos.open {
+      left: 0
+  }
+  .chat-app .chat {
+      margin: 0
+  }
+  .chat-app .chat .chat-header {
+      border-radius: 0.55rem 0.55rem 0 0
+  }
+  .chat-app .campo-chat {
+      height: 300px;
+      overflow-x: auto
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .chat-app .chat-list {
+      height: 650px;
+      overflow-x: auto
+  }
+  .chat-app .campo-chat {
+      height: 600px;
+      overflow-x: auto
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .chat-app .chat-list {
+      height: 480px;
+      overflow-x: auto
+  }
+  .chat-app .campo-chat {
+      height: calc(100vh - 350px);
+      overflow-x: auto
+  }
+}
+.form-control::placeholder{
+  color: #fff;
+  opacity: 1;
+}
+input[type="text"]::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:   
+   #fff
+}

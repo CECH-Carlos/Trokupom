@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Produto</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+  />
+  
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+    rel="stylesheet"
+  />
+      <link rel="stylesheet" href="../static/css/style.css">
+      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+
+      <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="../static/js/main.js"></script>
+
+</head>
+<body>
+    <nav id="navmenu" class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="/home"  class="navbar-brand">
+            <!---<img id="imglogo" src="{{ url_for('static', filename='images/cupom2.png') }}" />-->
+            <img id="imglogo" src="../static/images/cupom2.png" />
+          </a>
+          <div class="input-group rounded">
+            <input type="search" class="form-control rounded" placeholder="Pesquisar produtos" aria-label="Search" aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+          <!---<a href="" ><img id="carrinho" src="{{ url_for('static', filename='images/pngtree-vector-cart-icon-png-image_1851515-removebg-preview.png') }}" /></a>--->
+          <a style=" margin-top: 1%;" href="/chat"><img id="carrinho" src="../static/images/chatimg.png" /></a>
+    
+         <a style="margin-left: 4%"  href="/postProduto"  ><img class="addPro" src="../static/images/add.png" alt=""></a>
+           <a href="/auth/login" style="margin-left: 2%" >
+              <img src="../static/images/iconuser.png" class="imgperfil" alt="">
+            </a>
+    
+          <!---Colar um if se tiver logado muda para o p comentado abaixo-->
+          <!--<p href="perfilUsuario.html" style="color: #fff;text-decoration:none; float: right; margin-left: 1%;">Olá (nome do usuario)</p>-->
+          <a href="/auth/login" style="color: #fff;text-decoration:none; float: right; margin-left: 1%;">Entrar</a> 
+
+     
+        </div>
+
+      </nav>
+      <div class="row">
+         <div id="corFundo">
+    <div class="CadastroProduto" style="background-color: #fff; padding: 20px; margin-bottom: 5%;">
+            <!---Colocar um header estilo o do cb -->
+            <div class="tituloProduto" style="text-align: center;  border:1px solid rgb(53, 79, 126); margin-top: 2%; ">
+              <p style="font-size: 20px;" >Publicar um produto</p>
+            </div>
+            <!---Nome do produto-->
+            <h5 style="margin-top: 2%;">Produto:</h5>
+            <input name="nome-produto" style="margin-top: 2%;" class="form-control" type="text" placeholder="Fone Air Buds">
+            <h5 style="margin-top: 2%;">Descrição:</h5>
+            <!---Descrição do produto-->
+            <textarea name="comentario" placeholder="Descrição referente ao seu produto" style="resize: none;height: 150px; margin-top: 2%;" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <!---Categoria-->
+            <h5 style="margin-top: 2%;">Selecione a categoria do produto:</h5>
+            <select name="categoria" style="margin-top: 2%;" style="width: 60%;" class="form-control" id="exampleFormControlSelect1">
+              <option>Tecnologia</option>
+              <option>Roupas</option>
+              <option>Acessórios</option>
+              <option>Brinquedo</option>
+              <option>Outros</option>
+            </select>
+            <!---Foto do produto-->
+            <h5 style="margin-top: 2%;">Selecione a imagem :</h5>
+            <div class = "row" style="margin-top: 2%; text-align: center;">
+              <div style="width: 100%;">
+              <div style="text-align: center;">
+              <img id="output"/>
+            </div>  
+              <label style="float: right; margin-right:12%;" class="btnImg" for="file" style="border:1px solid #000;">
+                <input name="imagem" class="selecionarImagem" id="file" type="file" accept="image/*" onchange="loadFile(event)">
+              +
+              </label>
+            </div>
+               
+            
+           
+
+            </div>
+
+
+            <div style="text-align: center; margin-bottom: 2%; margin-top: 2%;">
+               <button class="btnPublicar" onclick="location.href='/home'">Publicar</button>
+            </div>
+
+          </div>
+
+          
+     
+
+
+
+
+</body>
+</html>

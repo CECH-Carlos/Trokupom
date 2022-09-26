@@ -1,0 +1,39 @@
+{% extends 'loginPage.html' %}
+
+{% block content %}
+
+    <div class="card-body px-4 py-5 px-md-5">
+        <form action="/auth/login" method="POST">
+
+        <h4 style="text-align: center; margin-bottom: 5% ;">Faça o login</h4>
+
+
+        <div class="form-outline mb-4">
+            <input type="email" id="form3Example3" class="form-control" name="email" />
+            <label class="form-label" for="form3Example3">Email</label>
+        </div>
+
+
+        <div class="form-outline mb-4">
+            <input type="password" id="form3Example4" class="form-control" name="password" />
+            <label class="form-label" for="form3Example4">Senha</label>
+        </div>
+
+        <a style="color: #393f81;" onclick="location.href='/auth/login/resetPassword'">Esqueceu a senha?</a>
+
+
+        <button type="submit" onclick="location.href=url_for('/home')" style="background-color: #29539b;
+            background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);"
+            class="btn btn-primary btn-block mb-2">
+            Entrar
+        </button>
+
+
+        <p class="mb-5 pb-lg-2" style="color: #393f81;">Não possui uma conta? <a
+            href="{{ url_for('cadastro') }}" style="color: #393f81;">Clique aqui para se registrar</a></p>
+
+
+        </form>
+    </div>
+
+{% endblock %}
